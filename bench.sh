@@ -11,6 +11,7 @@ function bench {
     cd ..
     logcmd ./$1/test.exe
     logcmd ./$1/shedskin/test
+    logcmd ./$1/test-gcj.exe
     logcmd ./$1/test-d.exe
     logcmd luajit $1/test.lua
     logcmd nodejs $1/test.js

@@ -1,4 +1,4 @@
-all: test.exe shedskin/test test-d.exe
+all: test.exe shedskin/test test-d.exe test-gcj.exe
 
 test.exe: test.c
 	clang -O3 $< -o $@
@@ -9,5 +9,8 @@ shedskin/test: test.py
 
 test-d.exe: test.d
 	gdc -O3 $< -o $@
+
+test-gcj.exe: test.java
+	gcj -O3 --main=test $< -o $@
 
 .PHONY: all
