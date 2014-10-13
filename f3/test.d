@@ -13,6 +13,6 @@ void main()
             }
         }
     }
-    writeln("%i\n", cc);
+    writeln(cc);
 }
 
