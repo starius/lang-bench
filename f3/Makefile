@@ -1,4 +1,4 @@
-all: test.exe shedskin/test test-d.exe test-gcj.exe test.class
+all: test.exe shedskin/test test-d.exe test-gcj.exe test.class test-ghc.exe
 
 test.exe: test.c
 	clang -O3 $< -o $@
@@ -15,5 +15,8 @@ test-gcj.exe: test.java
 
 test.class: test.java
 	javac $<
+
+test-ghc.exe: test.hs
+	ghc -O3 $< -o $@
 
 .PHONY: all

@@ -19,6 +19,7 @@ function bench {
     logcmd luajit $1/test.lua
     logcmd nodejs $1/test.js
     logcmd pypy $1/test.py
+    logcmd $1/test-ghc.exe
     logcmd perl $1/test.pl
     logcmd ruby $1/test.rb
 }
