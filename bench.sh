@@ -1,6 +1,7 @@
 
 function logcmd {
-    echo $@
+    echo
+    echo '=== ' $@ ' ==='
     time $@
 }
 
