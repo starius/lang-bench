@@ -1,4 +1,4 @@
-= Compare performance programming and scripting languages
+# Compare performance programming and scripting languages
 
 Install dependencies (Debian Wheezy):
 
