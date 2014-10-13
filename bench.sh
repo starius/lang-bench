@@ -8,11 +8,12 @@ function logcmd {
 function bench {
     cd $1
     make
-    logcmd ./$1.exe
-    logcmd ./shedskin/$1
-    logcmd luajit $1.lua
-    logcmd nodejs $1.js
-    logcmd pypy $1.py
+    cd ..
+    logcmd ./$1/test.exe
+    logcmd ./$1/shedskin/test
+    logcmd luajit $1/test.lua
+    logcmd nodejs $1/test.js
+    logcmd pypy $1/test.py
 }
 
 bench f3

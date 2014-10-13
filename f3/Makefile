@@ -1,10 +1,10 @@
-all: f3.exe shedskin/f3
+all: test.exe shedskin/test
 
-f3.exe: f3.c
+test.exe: test.c
 	clang -O3 $< -o $@
 
-shedskin/f3: f3.py
+shedskin/test: test.py
 	mkdir -p shedskin
-	cd shedskin && cp ../f3.py . && shedskin f3.py && make
+	cd shedskin && cp ../test.py . && shedskin test.py && make
 
 .PHONY: all
