@@ -79,9 +79,9 @@ sys     0m0.036s
 ===  f3/test-ghc.exe  ===
 499500
 
-real    0m30.538s
-user    0m30.290s
-sys     0m0.196s
+real    0m1.999s
+user    0m1.992s
+sys     0m0.000s
 
 ===  perl f3/test.pl  ===
 499500
