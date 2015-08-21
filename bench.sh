@@ -17,6 +17,7 @@ function bench {
     logcmd ./$1/test-gcj.exe
     logcmd ./$1/test-d.exe
     logcmd luajit $1/test.lua
+    logcmd moon $1/test.moon
     logcmd nodejs $1/test.js
     logcmd pypy $1/test.py
     logcmd $1/test-ghc.exe
