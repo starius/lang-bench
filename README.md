@@ -7,7 +7,7 @@ echo 'deb http://ftp.debian.org/debian/ wheezy-backports main' \
     | sudo tee /etc/apt/sources.list.d/wheezy-backports
 
 sudo aptitude install luajit shedskin openjdk-6-jdk \
-    gcj-jre pypy ruby perl clang make gdc ghc
+    gcj-jre gcj-jdk pypy ruby perl clang make gdc ghc
 ```
 
 Run benchmark:
