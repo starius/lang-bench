@@ -1,4 +1,5 @@
-all: test.exe shedskin/test test-d.exe test-gcj.exe test.class test-ghc.exe
+all: test.exe shedskin/test test-d.exe test-gcj.exe test.class test-ghc.exe \
+	go/bin/f3
 
 test.exe: test.c
 	clang -O3 $< -o $@
@@ -18,5 +19,8 @@ test.class: test.java
 
 test-ghc.exe: test.hs
 	ghc -O3 $< -o $@
+
+go/bin/f3: go/src/f3/main.go
+	GOPATH=$(shell pwd)/go go install f3
 
 .PHONY: all
