@@ -34,6 +34,13 @@ real    0m0.803s
 user    0m0.800s
 sys     0m0.004s
 
+===  f3/go/bin/f3  ===
+499500
+
+real    0m0.838s
+user    0m0.836s
+sys     0m0.000s
+
 ===  java test  ===
 499500
 

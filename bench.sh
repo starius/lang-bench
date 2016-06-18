@@ -11,6 +11,7 @@ function bench {
     cd ..
     logcmd ./$1/test.exe
     logcmd ./$1/shedskin/test
+    logcmd f3/go/bin/f3
     cd $1
     logcmd java test
     cd ..
